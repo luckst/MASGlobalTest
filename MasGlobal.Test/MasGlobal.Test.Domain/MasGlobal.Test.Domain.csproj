@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <!--/-:cnd -->
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Repositories\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\MasGlobal.Test.Domain.Entities\MasGlobal.Test.Domain.Entities.csproj" />
+    <ProjectReference Include="..\MasGlobal.Test.Infrastructure.Framework\MasGlobal.Test.Infrastructure.Framework.csproj" />
+  </ItemGroup>
+
+</Project>
