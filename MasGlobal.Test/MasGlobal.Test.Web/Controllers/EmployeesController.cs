@@ -21,7 +21,7 @@
         [HttpGet("[action]")]
         public List<Employee> GetEmployees(int? id)
         {
-            return employeesApplicationService.GetEmployees(id);
+            return employeesApplicationService.GetEmployeesFromDB(id);
         }
     }
 }

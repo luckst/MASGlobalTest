@@ -33,6 +33,7 @@
   <ItemGroup>
     <ProjectReference Include="..\MasGlobal.Test.Application\MasGlobal.Test.Application.csproj" />
     <ProjectReference Include="..\MasGlobal.Test.Domain\MasGlobal.Test.Domain.csproj" />
+    <ProjectReference Include="..\MasGlobal.Test.Infrastructure.Data\MasGlobal.Test.Infrastructure.Data.csproj" />
   </ItemGroup>
 
   <ItemGroup>

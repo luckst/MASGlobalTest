@@ -8,5 +8,6 @@ namespace MasGlobal.Test.Application.Services
     public interface IEmployeesApplicationService
     {
         List<Employee> GetEmployees(int? id);
+        List<Employee> GetEmployeesFromDB(int? id);
     }
 }

@@ -1,5 +1,6 @@
 ﻿namespace MasGlobal.Test.Infrastructure.Data.EntityFramework
 {
+    using MasGlobal.Test.Domain.Entities;
     using Microsoft.EntityFrameworkCore;
     using Microsoft.Extensions.Configuration;
     using System;
@@ -40,5 +41,13 @@
             }
 
         }
+
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            modelBuilder.Entity<EmployeeDTO>()
+                .ToTable("Employees");
+        }
+
+        public DbSet<EmployeeDTO> Employees { get; set; }
     }
 }

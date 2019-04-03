@@ -7,23 +7,25 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4. Infrastructure", "4. Inf
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4.1. Common", "4.1. Common", "{F074BD61-200D-4655-9BEA-A22D3125AAC7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MasGlobal.Test.Infrastructure.Framework", "MasGlobal.Test\MasGlobal.Test.Infrastructure.Framework\MasGlobal.Test.Infrastructure.Framework.csproj", "{36B6F0A3-3C9C-45DC-8C0A-B928BFCB5183}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MasGlobal.Test.Infrastructure.Framework", "MasGlobal.Test\MasGlobal.Test.Infrastructure.Framework\MasGlobal.Test.Infrastructure.Framework.csproj", "{36B6F0A3-3C9C-45DC-8C0A-B928BFCB5183}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3. Domain", "3. Domain", "{32BFBC65-8543-48E7-AA17-338065B1BD26}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MasGlobal.Test.Domain.Entities", "MasGlobal.Test\MasGlobal.Test.Domain.Entities\MasGlobal.Test.Domain.Entities.csproj", "{E5ADE883-F224-4604-8DA7-CC890D74D8BA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MasGlobal.Test.Domain.Entities", "MasGlobal.Test\MasGlobal.Test.Domain.Entities\MasGlobal.Test.Domain.Entities.csproj", "{E5ADE883-F224-4604-8DA7-CC890D74D8BA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MasGlobal.Test.Domain", "MasGlobal.Test\MasGlobal.Test.Domain\MasGlobal.Test.Domain.csproj", "{BED8B397-0E1D-4C2E-867D-0258272B57E8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MasGlobal.Test.Domain", "MasGlobal.Test\MasGlobal.Test.Domain\MasGlobal.Test.Domain.csproj", "{BED8B397-0E1D-4C2E-867D-0258272B57E8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MasGlobal.Test.Domain.Test", "MasGlobal.Test\MasGlobal.Test.Domain.Test\MasGlobal.Test.Domain.Test.csproj", "{56FD222D-9C14-48FB-B745-1AFD56934CDA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MasGlobal.Test.Domain.Test", "MasGlobal.Test\MasGlobal.Test.Domain.Test\MasGlobal.Test.Domain.Test.csproj", "{56FD222D-9C14-48FB-B745-1AFD56934CDA}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2. Application", "2. Application", "{241A2E48-EA0E-470D-94A4-F4A6F6AC8630}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MasGlobal.Test.Application", "MasGlobal.Test\MasGlobal.Test.Application\MasGlobal.Test.Application.csproj", "{5E9CD108-E63B-44E0-A135-DE6C3A3362CB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MasGlobal.Test.Application", "MasGlobal.Test\MasGlobal.Test.Application\MasGlobal.Test.Application.csproj", "{5E9CD108-E63B-44E0-A135-DE6C3A3362CB}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1. Presentation", "1. Presentation", "{AD8BBADA-ADD1-4B60-9C4B-6819B9B069C0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MasGlobal.Test.Web", "MasGlobal.Test\MasGlobal.Test.Web\MasGlobal.Test.Web.csproj", "{63029018-4751-4CEB-BDC7-87141B12884B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MasGlobal.Test.Web", "MasGlobal.Test\MasGlobal.Test.Web\MasGlobal.Test.Web.csproj", "{63029018-4751-4CEB-BDC7-87141B12884B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MasGlobal.Test.Infrastructure.Data", "MasGlobal.Test\MasGlobal.Test.Infrastructure.Data\MasGlobal.Test.Infrastructure.Data.csproj", "{9DCAC9B4-9F94-4287-9E80-E1928B6C2D71}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -55,6 +57,10 @@ Global
 		{63029018-4751-4CEB-BDC7-87141B12884B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{63029018-4751-4CEB-BDC7-87141B12884B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{63029018-4751-4CEB-BDC7-87141B12884B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9DCAC9B4-9F94-4287-9E80-E1928B6C2D71}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9DCAC9B4-9F94-4287-9E80-E1928B6C2D71}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9DCAC9B4-9F94-4287-9E80-E1928B6C2D71}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9DCAC9B4-9F94-4287-9E80-E1928B6C2D71}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -67,6 +73,7 @@ Global
 		{56FD222D-9C14-48FB-B745-1AFD56934CDA} = {32BFBC65-8543-48E7-AA17-338065B1BD26}
 		{5E9CD108-E63B-44E0-A135-DE6C3A3362CB} = {241A2E48-EA0E-470D-94A4-F4A6F6AC8630}
 		{63029018-4751-4CEB-BDC7-87141B12884B} = {AD8BBADA-ADD1-4B60-9C4B-6819B9B069C0}
+		{9DCAC9B4-9F94-4287-9E80-E1928B6C2D71} = {F074BD61-200D-4655-9BEA-A22D3125AAC7}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {A3F7608B-68CA-4BDF-AE06-212881C02680}

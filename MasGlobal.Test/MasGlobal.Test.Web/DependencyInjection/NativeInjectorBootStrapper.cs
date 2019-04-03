@@ -2,6 +2,11 @@
 {
     using MasGlobal.Test.Application.Services;
     using MasGlobal.Test.Domain.Services;
+    using MasGlobal.Test.Infrastructure.Data.DBFactory;
+    using MasGlobal.Test.Infrastructure.Data.EntityFramework;
+    using MasGlobal.Test.Infrastructure.Data.Repositories;
+    using MasGlobal.Test.Infrastructure.Framework.RepositoryPattern;
+    using Microsoft.EntityFrameworkCore;
     using Microsoft.Extensions.Configuration;
     using Microsoft.Extensions.DependencyInjection;
     using System;
@@ -25,6 +30,22 @@
             // Domain
             services.AddScoped<IMasglobalTestApiService, MasglobalTestApiService>();
 
+            // Infra - Data
+
+            services.AddScoped<IDatabaseFactory, DatabaseFactory>();
+            services.AddScoped(typeof(IRepository<>), typeof(Repository<>));
+
+            services.AddScoped<DbContext>(sp => sp.GetService<DBContext>());
+
+            services.AddDbContext<DBContext>(options =>
+            {
+                options.UseSqlServer(configuration.GetConnectionString("DefaultConnection"));
+
+                // Register the entity sets needed by OpenIddict.
+                // Note: use the generic overload if you need
+                // to replace the default OpenIddict entities.
+                //options.UseOpenIddict();
+            });
         }
     }
 }
